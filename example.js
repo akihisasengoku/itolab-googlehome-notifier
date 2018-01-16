@@ -95,6 +95,6 @@ app.get('/google-home-notifier', function (req, res) {
 app.listen(serverPort, function () {
   ngrok.connect(serverPort, function (err, url) {
     console.log('Endpoints:');
-	  console.log('curl -X POST -d "text=Hello Google Home&ip=122.00.001" http://localhost:8091/google-home-notifier');
+	  console.log('curl -X POST -d "text=Hello Google Home&ip=127.0.0.01" http://localhost:8091/google-home-notifier');
   });
 })
